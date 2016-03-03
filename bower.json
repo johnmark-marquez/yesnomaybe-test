@@ -1,0 +1,19 @@
+{
+  "name": "yesnomaybe-test",
+  "description": "dev standards lesson 1",
+  "main": "index.js",
+  "authors": [
+    "JM Marquez"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
