@@ -1,0 +1,69 @@
+@accent: #263238;
+
+.fullscreen {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+html, body, section {
+    .fullscreen();
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    &.active .question {
+        display: none;
+    }
+}
+
+.question {
+    z-index: 20;
+    background-color: white;
+
+    textarea {
+        .center();
+        text-align: center;
+        font-size: 60px;
+        overflow: hidden;
+        resize: none;
+        font-family: 'Montserrat', sans-serif;
+        color: @accent;
+        border: none;
+    }
+}
+
+.response {
+
+    z-index: 10;
+
+    img, .overlay {
+        .fullscreen();
+    }
+
+    img {
+        display: block;
+        height: auto;
+    }
+
+    .overlay {
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    h4 {
+        .center();
+        text-align: center;
+        font-size: 100px;
+        letter-spacing: 10px;
+        color: white;
+    }
+}
